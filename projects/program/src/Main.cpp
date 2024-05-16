@@ -10,6 +10,9 @@
 #include "vec3.h"
 #include <iostream>
 
+// How to render.
+// cmd : .\_out\bin\debug-x64\program\program.exe > image.ppm
+
 bool hit_sphere(const point3& center, double radius, const ray& r) {
     vec3 oc = center - r.origin();
     auto a = dot(r.direction(), r.direction());
