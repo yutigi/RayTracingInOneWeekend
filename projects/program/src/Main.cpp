@@ -12,6 +12,7 @@
 
 // How to render.
 // cmd : .\_out\bin\debug-x64\program\program.exe > image.ppm
+// https://raytracing.github.io/books/RayTracingInOneWeekend.html
 
 double hit_sphere(const point3& center, double radius, const ray& r) {
     vec3 oc = center - r.origin();
